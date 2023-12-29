@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .8);
+    color: rgba(200, 200, 200, .9);
+}
+
+.container {
+    height: 100vh;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #F73D93;
+}
+
+.formulario-datos {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-datos input {
+    margin: 1rem 0;
+    line-height: 3rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+
+.formulario-datos input:active {
+    border-bottom: 1px solid #F73D93 ;
+}
+.formulario-datos input:focus {
+    border-bottom: 1px solid #F73D93 ;
+}
+
+.formulario-datos button {
+    margin: 1rem auto;
+    background-color: #F73D93;
+    border: 0;
+    outline: 0;
+    height: 3rem;
+    width: 45%;
+    border-radius: 10px ;
+    text-transform: uppercase;
+    color: white;
+}
+
+.listado-tareas {
+    display: flex;
+    flex-direction: column;
+}
+
+.listado-tareas h3, p {
+    font-size: 1.5rem;
+}
+
+.tarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.icono {
+    color: tomato;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .container h2 {
+        font-size:2.5rem ;
+    }
+
+    .formulario-datos { 
+        /* background-color: #F73D93; */
+        width: 100%;
+    }
+
+    .formulario-datos button {
+        font-size: 13px;
+    }
+
+    
+}
+
+@media screen and (max-width: 540px) {
+
+    .container h2 {
+        font-size:2rem ;
+    }
+
+    .formulario-datos button {
+        font-size: 11px;
+    }
+
+    .tarea h3 {
+        font-size: 10px;
+    }
+    .tarea p {
+        font-size: 10px;
+    }
+}
